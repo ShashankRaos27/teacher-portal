@@ -12,6 +12,7 @@ function App() {
       <Router>
         {/* <Header /> */}
         <Routes>
+          <Route path="/teacher-portal" element={<RegisterPage />} />
           <Route path="/" element={<RegisterPage />} />
           <Route path="/logIn" element={<LoginInPage />} />
           <Route path="/studentList" element={<StudentListPage />} />
