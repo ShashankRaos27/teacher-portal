@@ -5,4 +5,4 @@
 # -> In this portal we have all the 4 CRUD operations.
 #-> To run this application 
 1) npm install -- force
-2) nom start 
+2) npm start 
