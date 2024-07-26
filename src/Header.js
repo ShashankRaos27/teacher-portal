@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div className="px-2 py-4 flex justify-between flex-wrap ">
       <div>
-        <p className="font-semibold text-red-500 text-3xl">tailwebs.</p>
+        <p className="font-semibold text-red-500 text-3xl">Teacher Portal</p>
       </div>
       <div className="flex gap-8 items-center">
         <div>
