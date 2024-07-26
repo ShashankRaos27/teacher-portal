@@ -1,16 +1,14 @@
-import React, { useEffect, useState } from "react";
-import { UserOutlined, LockOutlined } from "@ant-design/icons";
+import { LockOutlined, UserOutlined } from "@ant-design/icons";
 import { Button, Form, Input, Typography } from "antd";
-import { useDispatch, useSelector } from "react-redux";
-import { login } from "../Redux/Actions/UserAction";
-import { toast } from "react-toastify";
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const LoginInPage = () => {
   const [form] = Form.useForm();
   const navigate = useNavigate();
   const Text = Typography;
-  const dispatch = useDispatch();
   const user = useSelector((state) => {
     return state.auth.user;
   });
@@ -89,7 +87,7 @@ const LoginInPage = () => {
 
           <a
             className="login-form-forgot flex justify-end text-blue-400 font-medium mb-2"
-            href=""
+            href="/"
           >
             Forgot password?
           </a>

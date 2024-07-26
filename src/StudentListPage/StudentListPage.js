@@ -1,19 +1,18 @@
 // StudentListPage component
-import React, { useEffect, useState } from "react";
-import { Table, Button, Modal, Typography, Form, Input } from "antd";
-import { useDispatch, useSelector } from "react-redux";
 import {
-  addStudent,
-  editStudent,
-  deleteStudent,
-  setStudents,
-} from "../Redux/Actions/StudentAction";
-import {
-  UserOutlined,
   EditOutlined,
   FileTextOutlined,
+  UserOutlined,
 } from "@ant-design/icons";
+import { Button, Form, Input, Modal, Table, Typography } from "antd";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Header from "../Header";
+import {
+  addStudent,
+  deleteStudent,
+  editStudent
+} from "../Redux/Actions/StudentAction";
 
 const { Text } = Typography;
 
